@@ -5,14 +5,14 @@ Investigating Concept Heterogeneity and Granularity in the OHDSI Network
 
 - Analytics use case(s): **Characterization**
 - Study type: **Methods Research**
-- Tags: **ConceptPrevalence**
+- Tags: **-**
 - Study lead: **Anna Ostropolets**
-- Study lead forums tag: **https://forums.ohdsi.org/u/aostropolets**
+- Study lead forums tag: **[aostropolets](https://forums.ohdsi.org/u/aostropolets)**
 - Study start date: **March 15, 2019**
 - Study end date: **-**
-- Protocol: **https://github.com/ohdsi-studies/ConceptPrevalence/extras/ConceptPrevalenceStudyProtocol_v1.0.docx**
-- Publications: **TBD**
-- Results explorer: **TBD**
+- Protocol: **[Word file](https://github.com/ohdsi-studies/ConceptPrevalence/extras/ConceptPrevalenceStudyProtocol_v1.0.docx)**
+- Publications: **-**
+- Results explorer: **-**
 
 This study aims to investigate the concept usage patterns across different OHDSI datasets and their impact on cohort identification to facilitate cross-institutional and network studies. For every standard concept in the OMOP CDM, we will investigate if it is used at each site, and if used, which source code(s) are used at individual sites, and how differences in corresponding source codes impact the portability of cohort identification algorithms.  
 
