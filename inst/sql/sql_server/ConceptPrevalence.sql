@@ -71,11 +71,10 @@ select specimen_concept_id, count(*),'specimen'
 from @cdm_database_schema.specimen
 group by specimen_concept_id
 union all
---economics
---select cost_concept_id, count(*),'cost'
---from @cdm_database_schema.cost
---group by cost_concept_id
---union all
+select visit_concept_id, count(*),'visit id'
+from @cdm_database_schema.visit_occurrence
+group by visit_concept_id
+union all
 select visit_type_concept_id, count(*),'visit'
 from @cdm_database_schema.visit_occurrence
 group by visit_type_concept_id
