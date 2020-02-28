@@ -43,18 +43,27 @@ resultDatabaseSchema <-"your_results_schema"
 
 connectionDetails <- DatabaseConnector::createConnectionDetails(
 							      dbms = dbms,
+							      
                                                               server = server,
+							      
                                                               user = user,
+							      
                                                               password = password,
+							      
                                                               port = port
+							      
 							      )
                                                               
 ## Then run the following:
 ConceptPrevalence::calculate (
- 				 connectionDetails,				 
+ 				 connectionDetails,	
+				 
   				 cdmName,
+				 
 				 cdmDatabaseSchema,
+				 
  				 vocabDatabaseSchema,
+				 
 				 resultDatabaseSchema
 				 )
 			 
