@@ -29,53 +29,40 @@ library('ConceptPrevalence')
 ## Add inputs for the site:
 
 dbms <- 'your_dbms'
-
 user <- 'user'
-
 password <- 'password'
-
 server <- Sys.getenv('server')
-
 port <- Sys.getenv('port')
 
 
 cdmName <- 'your_cdm_name'
-
 cdmDatabaseSchema <- 'your_cdm_schema
-
 vocabDatabaseSchema <- 'your_vocab_schema'
-
 resultDatabaseSchema <-"your_results_schema"
 
 
 connectionDetails <- DatabaseConnector::createConnectionDetails(
-
 							      dbms = dbms,
-							      
                                                               server = server,
-							      
                                                               user = user,
-							      
                                                               password = password,
-							      
                                                               port = port
 							      )
                                                               
 ## Then run the following:
 ConceptPrevalence::calculate (
-
- 				 connectionDetails,
-				 
+ 				 connectionDetails,				 
   				 cdmName,
-				 
 				 cdmDatabaseSchema,
-				 
  				 vocabDatabaseSchema,
-				 
 				 resultDatabaseSchema
-				 
 				 )
 			 
+## Output
+
+Once you run the package, you will see 5 csv files in your working directory (count_standard.csv, count_source.csv, mappings.csv, vocab_version.csv and cdm_info.csv).
+You will then be able to send the files through a secure SFTP server.
+Please contact me at ao2671 at cumc.columbia.edu to get the server credentials.
 
 License
 =======
